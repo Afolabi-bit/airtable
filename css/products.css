@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: GT;
+  src: url(../font/Gt-medium/GT-Eesti-Display-Medium.ttf);
+}
+@font-face {
+  font-family: regular;
+  src: url(../font/GT-Regular/gt-regular.ttf);
+}
+
+@font-face {
+  font-family: GT-thin;
+  src: url(../font/Gt-thin/gt-ultrathin/Gt-thin-font.ttf);
+}
+
+:root {
+  --primary: #2d7ff9;
+  --primary-hover: #0049b8;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 0.774);
+}
+
+span,
+p,
+a {
+  color: #3333339f;
+}
+.montserrat {
+  font-family: GT;
+}
+
+.gt-thin {
+  font-family: GT-thin;
+}
+
+.regular {
+  font-family: regular;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.main-container {
+  width: 865px;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/********* Topbar **********/
+
+.topbar {
+  width: 100%;
+  background: var(--primary);
+  padding: 3.5rem 0 2rem;
+  justify-content: space-between;
+}
+
+.topbar > div:nth-child(1) {
+  justify-content: space-between;
+}
+
+.topbar .logo {
+  transform: translateY(-15px);
+  padding: 1rem 1rem 1rem 0;
+  position: relative;
+  display: block;
+}
+
+.topbar .logo a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 500;
+}
+
+.topbar .nav-links-wrapper {
+  display: inline;
+  padding: 1.2rem;
+}
+
+.topbar .nav-links-wrapper .nav-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.topbar .nav-links-wrapper .nav-links li a {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 1rem 1.3rem;
+  color: #b1d6f3;
+  transition: all 200ms;
+}
+
+.topbar .nav-links-wrapper .nav-links li a:hover {
+  color: #fff;
+}
+
+.topbar .nav-links-wrapper .nav-links li#blue a {
+  color: #fff;
+}
+
+.topbar .nav-links-wrapper .nav-links li#blue a:hover {
+  color: #fff;
+}
+
+/*****x**** Topbar ******x****/
+
+/************* SPREADSHEET SECTION ************/
+.spreadsheet-section {
+  width: 100%;
+  height: 100%;
+  padding: 3rem 0 5rem;
+  background: var(--primary);
+}
+
+.spreadsheet-section .flex-row {
+  justify-content: space-evenly;
+}
+
+.spreadsheet-section .text {
+  width: 35%;
+  padding: 80px 0 0;
+}
+
+.spreadsheet-section .text h2 {
+  font-size: 35px;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.spreadsheet-section .text button {
+  padding: 1rem 2rem;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 14px;
+  font-family: GT;
+  letter-spacing: 0.2px;
+  transition: background 0.2s;
+}
+
+.spreadsheet-section .text button:hover {
+  background: #cbdefc;
+}
+
+.spreadsheet-section .image-carousel {
+  width: 65%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.spreadsheet-section .image-carousel .content {
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  position: relative;
+}
+
+.spreadsheet-section .image-carousel .content a {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 2;
+}
+
+.spreadsheet-section .image-carousel .content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.spreadsheet-section .image-carousel .content .btn-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.spreadsheet-section .image-carousel .content .btn-wrapper button {
+  font-size: 17px;
+  font-weight: 600;
+  width: 200px;
+  color: white;
+  padding: 1.2rem 2rem 1.7rem;
+  background: #f82b60;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  z-index: 3;
+  transition: 0.1s;
+}
+
+.spreadsheet-section .image-carousel .content .btn-wrapper button:hover {
+  background: #be1542;
+}
+
+.spreadsheet-section .image-carousel .content .btn-wrapper button object {
+  transform: translateY(6px);
+}
+/******XX******* SPREADSHEET SECTION *******XX*****/
+
+/************* ORGANIZE SECTION ************/
+section.organize-section {
+  width: 100%;
+  height: 787px;
+  margin: 0 0 10rem 0;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+section.organize-section img {
+  object-fit: cover;
+}
+
+section.organize-section img:nth-child(1) {
+  position: absolute;
+  top: -190px;
+  left: 110px;
+  width: 300px;
+  height: 611px;
+}
+
+section.organize-section img:nth-child(2) {
+  position: absolute;
+  top: -70px;
+  right: -700px;
+  width: 1112px;
+  height: 639px;
+}
+
+section.organize-section img:nth-child(3) {
+  position: absolute;
+  bottom: -140px;
+  left: 140px;
+  width: 720px;
+  height: 477px;
+}
+
+section.organize-section .text {
+  position: absolute;
+  left: 440px;
+  top: 50px;
+  margin: 1rem 4rem 1rem 7rem;
+  width: 384px;
+  height: 273px;
+  text-align: left;
+}
+
+section.organize-section .text h2 {
+  color: #333;
+  margin: 0 0 2.4rem 0;
+}
+
+section.organize-section .text p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1.3rem;
+}
+
+section.organize-section .text p span {
+  letter-spacing: -1.5px;
+}
+
+section.organize-section .text a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+
+section.organize-section .text .flex-row {
+  margin: 3rem 0;
+  padding: 12px;
+  width: 243px;
+  height: 60px;
+  border: 1.5px solid rgba(204, 204, 204, 0.5);
+  border-radius: 7px;
+  box-shadow: 6px 6px 1px rgba(204, 204, 204, 0.4);
+  position: relative;
+}
+
+section.organize-section .text .flex-row object {
+  transform: translateY(-3px);
+  width: 40px;
+  height: 34px;
+  margin-right: 12px;
+}
+
+section.organize-section .text .flex-row div {
+  width: 140px;
+  position: relative;
+}
+
+section.organize-section .text .flex-row div h4 {
+  font-size: 12px;
+  color: rgba(51, 51, 51, 0.826);
+  letter-spacing: 0.5px;
+  margin-bottom: 3px;
+}
+
+section.organize-section .text .flex-row div p {
+  color: rgba(51, 51, 51, 0.826);
+  font-size: 10px;
+  font-weight: 400;
+}
+
+section.organize-section .text .flex-row p.gt-thin {
+  font-size: 12px;
+  position: absolute;
+  top: 5px;
+  right: 12px;
+}
+
+/******XX******* ORGANIZE SECTION *******XX*****/

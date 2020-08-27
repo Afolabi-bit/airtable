@@ -1,0 +1,707 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: GT;
+  src: url(../font/Gt-medium/GT-Eesti-Display-Medium.ttf);
+}
+@font-face {
+  font-family: regular;
+  src: url(../font/GT-Regular/gt-regular.ttf);
+}
+
+@font-face {
+  font-family: GT-thin;
+  src: url(../font/Gt-thin/gt-ultrathin/Gt-thin-font.ttf);
+}
+
+:root {
+  --primary: #2d7ff9;
+  --primary-hover: #0049b8;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 0.774);
+}
+
+span,
+p,
+a {
+  color: #3333339f;
+}
+.montserrat {
+  font-family: GT;
+}
+
+.gt-thin {
+  font-family: GT-thin;
+}
+
+.regular {
+  font-family: regular;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.btn {
+  cursor: pointer;
+  color: #fff;
+  background: var(--primary);
+  border: none;
+  border-radius: 0.8rem;
+  padding: 0 2rem;
+}
+
+.main-container {
+  width: 865px;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/********* Topbar **********/
+
+.topbar {
+  padding: 3.5rem 0;
+  justify-content: space-between;
+}
+
+.topbar .logo {
+  padding: 1rem 1rem 1rem 0;
+  position: relative;
+  display: block;
+}
+
+.topbar .logo a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 500;
+}
+
+.topbar .nav-links-wrapper {
+  display: inline;
+  padding: 1.2rem;
+}
+
+.topbar .nav-links-wrapper .nav-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.topbar .nav-links-wrapper .nav-links li a {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 1rem 1.3rem;
+  color: #777;
+  transition: all 200ms;
+}
+
+.topbar .nav-links-wrapper .nav-links li a:hover {
+  color: #333333;
+}
+
+.topbar .nav-links-wrapper .nav-links li#blue a {
+  color: var(--primary);
+}
+
+.topbar .nav-links-wrapper .nav-links li#blue a:hover {
+  color: #0049b8;
+}
+
+/*****x**** Topbar ******x****/
+
+/******8 Hero section ********/
+
+.hero-section {
+  width: 100%;
+  padding: 3rem 0;
+  display: flex;
+}
+
+.hero-section .hero-text {
+  padding: 12rem 0;
+  width: 42%;
+  height: 100%;
+}
+
+.hero-section .hero-text h1 {
+  color: #333333;
+  letter-spacing: 0.4px;
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+.hero-section .hero-text p {
+  font-size: 21px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  color: #33333357;
+  margin-bottom: 3rem;
+}
+
+.hero-section .newsletter {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.hero-section .newsletter .field {
+  width: 70%;
+  outline: none;
+  border: none;
+  padding: 1.8rem 2rem;
+  background: #f2f2f2;
+  border-radius: 0.8rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333333;
+  margin: 0 0.8rem 0 0.1rem;
+}
+
+.hero-section .newsletter .field:focus {
+  border: 2px solid #aaaaaa;
+}
+
+.hero-section .newsletter .hero-btn {
+  background: var(--primary);
+  color: #ffffff;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.hero-section .hero-text span {
+  font-size: 9px;
+  color: #3333339f;
+}
+
+.hero-section .hero-text span a {
+  border-bottom: 2px solid #e2e2e2;
+}
+
+.hero-section .hero-text span a:hover {
+  border-bottom: 2px solid #666;
+}
+
+.hero-img-wrapper {
+  justify-self: flex-end;
+  width: 55%;
+  height: 55rem;
+}
+
+.hero-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/***X**8 Hero section ****X****/
+
+/********* CAROUSEL SECTION *********/
+.carousel-section {
+  padding: 3rem 0;
+  position: relative;
+}
+
+.carousel-section .circle-img {
+  position: absolute;
+  top: -0.5remrem;
+  left: 13%;
+  width: 20rem;
+  height: auto;
+  animation: threesixty 50s infinite;
+  z-index: 1;
+}
+
+@keyframes threesixty {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#carousel-top {
+  fill: white;
+}
+
+.carousel-section .carousel-img-wrapper {
+  border: 0.8rem solid rgba(153, 153, 153, 0.2);
+  border-radius: 1rem;
+  margin: 1rem 0;
+  width: 73%;
+  height: 50rem;
+  z-index: 2;
+}
+
+.carousel-section .carousel-img-wrapper .carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-section .carousel-text {
+  width: 27%;
+  height: 100%;
+  padding: 0 0 0 4rem;
+}
+
+.carousel-section .carousel-text h2 {
+  font-size: 24px;
+  letter-spacing: 0.4px;
+  font-weight: 500;
+  line-height: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.carousel-section .carousel-text a.product-tour {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 4rem;
+}
+
+.carousel-section .carousel-text a:hover {
+  color: var(--primary-hover);
+}
+
+.carousel-section .carousel-text .task-wrapper {
+  margin: 0 0 2rem 0;
+}
+
+.carousel-section .carousel-text .task-wrapper .task {
+  display: flex;
+  margin: 1.5rem 0;
+  height: 5rem;
+  position: relative;
+}
+
+.carousel-section .carousel-text .task-wrapper .task object {
+  margin: 0 2rem 0 0;
+}
+
+.carousel-section .carousel-text .task-wrapper .task span {
+  color: #999;
+  position: absolute;
+  top: 15%;
+  left: 5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 2rem 0;
+}
+
+.carousel-section .triangle-img {
+  position: absolute;
+  bottom: -5rem;
+  left: 50%;
+  margin: 0 auto;
+  width: 10rem;
+  height: auto;
+  animation: minusthreesixty 50s infinite;
+}
+
+@keyframes minusthreesixty {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/****XX***** CAROUSEL SECTION *****XX****/
+
+/************ BLOCKS SECTION **************/
+.main-container .blocks-section {
+  padding: 7rem 0;
+}
+
+.main-container .blocks-section .blocks-text {
+  margin-top: 12rem;
+  width: 28%;
+  height: 100%;
+}
+
+.main-container .blocks-section .blocks-text span {
+  text-transform: uppercase;
+  color: var(--primary);
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: block;
+  margin: 1rem 0;
+}
+
+.main-container .blocks-section .blocks-text h2 {
+  letter-spacing: 0.2px;
+  line-height: 27px;
+  margin-bottom: 1.7rem;
+}
+
+.main-container .blocks-section .blocks-text p {
+  font-size: 15px;
+  line-height: 18.8px;
+  letter-spacing: 0.2px;
+  margin-bottom: 2rem;
+  text-align: start;
+  width: 95%;
+}
+
+.main-container .blocks-section .blocks-text a {
+  color: var(--primary);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.main-container .blocks-section .blocks-text a:hover {
+  color: var(--primary-hover);
+}
+
+.main-container .blocks-section .blocks-img-wrapper {
+  justify-self: flex-end;
+  width: 75%;
+  height: 60rem;
+  margin-left: 1rem;
+}
+
+.main-container .blocks-section .blocks-img-wrapper .blocks-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+/******XX****** BLOCKS SECTION ********XX******/
+
+/*************INSPIRATION SECTION **********/
+.inspiration-section {
+  position: relative;
+  padding: 7rem 0 9rem;
+  width: 100%;
+  height: 100%;
+}
+
+.inspiration-section .inspiration-images {
+  width: 75%;
+  justify-content: space-between;
+}
+
+.inspiration-section .inspiration-images .img-wrapper-text {
+  position: relative;
+  width: 22rem;
+  height: 47rem;
+  border-radius: 1.6rem;
+  overflow-y: hidden;
+  background: transparent;
+}
+
+.inspiration-section .inspiration-images .img-wrapper-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 22rem;
+  height: 49rem;
+  background: #cccccc5d;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  transition: all 500ms ease;
+}
+
+.inspiration-section .inspiration-images .img-wrapper-text:hover::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+#bg-blue {
+  background: #baeff8ec !important;
+}
+
+#bg-pink {
+  background: #ffc0cbad !important;
+}
+
+#bg-gray {
+  background: #e4e4e4 !important;
+}
+
+#bg-purple {
+  background: #aa41aa1c !important;
+}
+
+.inspiration-section .inspiration-images .img-wrapper-text a {
+  width: 100%;
+  height: 100%;
+}
+
+.inspiration-section .inspiration-images .img-wrapper-text a img {
+  display: block;
+  z-index: 1000 !important;
+  border-radius: 1.2rem;
+  margin: 1rem auto;
+  width: 87%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.inspiration-section .inspiration-images .img-wrapper-text h3 {
+  width: 87%;
+  margin: 0 auto;
+  padding: 0 0 1rem 0;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1.1px;
+  line-height: 16.2px;
+  font-weight: 500;
+  text-align: start;
+}
+
+.inspiration-section .inspiration-text {
+  padding: 4rem 0 0 2rem;
+}
+
+.inspiration-section .inspiration-text h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.inspiration-section .inspiration-text p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18.8px;
+  letter-spacing: 0.2px;
+}
+
+.inspiration-section .inspiration-text a {
+  display: block;
+  padding-top: 1.2rem;
+  color: var(--primary);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.inspiration-section .inspiration-text a:hover {
+  color: var(--primary-hover);
+}
+
+.inspiration-section .inspiration-text a object {
+  transform: translateY(4px);
+}
+
+.inspiration-section .round-img-absolute {
+  position: absolute;
+  bottom: 0;
+  left: 19rem;
+}
+/*******XX******INSPIRATION SECTION ******XX****/
+
+/*************LOGO SECTION **********/
+.logo-section {
+  position: relative;
+  padding: 13rem 0 15rem 0;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-section h2 {
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  text-align: center;
+  margin: 4rem auto;
+}
+
+.logo-section img.logos {
+  display: block;
+  width: 70%;
+  margin: 2rem auto;
+  height: 100%;
+}
+
+.logo-section img.spinning-square {
+  width: 9rem;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 10rem;
+  animation: threesixty 45s infinite;
+}
+/*******XX******LOGO SECTION ******XX****/
+
+/*************POWER SECTION **********/
+.power-section {
+  padding: 0 0 5rem 0;
+  width: 100%;
+  height: 100%;
+}
+
+.power-section .content {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.power-section .content h2 {
+  line-height: 30px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  letter-spacing: 0.7px;
+  word-spacing: 1px;
+}
+
+.power-section .content .newsletter {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 55%;
+}
+
+.power-section .content .newsletter .field {
+  width: 60%;
+  outline: none;
+  border: none;
+  padding: 1.2rem 1.5rem;
+  background: #f2f2f2;
+  border-radius: 0.8rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333333;
+  margin: 0 0.8rem 0 0.1rem;
+}
+
+.power-section .content .newsletter .field:focus {
+  border: 2px solid #aaaaaa;
+}
+
+.power-section .content .newsletter .power-btn {
+  width: 40%;
+  padding: 0.2rem 1.5rem;
+}
+
+.power-section .content p {
+  color: #333333bb;
+  margin: 0 auto;
+  width: 60%;
+  font-family: GT;
+  text-align: center;
+  font-size: 10px;
+}
+/*******XX******POWER SECTION ******XX****/
+
+/*************FOOTER SECTION **********/
+.footer {
+  justify-content: space-between;
+  padding: 10rem 0;
+}
+
+.footer .footer-links-wrapper .footer-link a {
+  display: block;
+  width: fit-content;
+  color: #3333337c;
+  font-family: GT;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16.2px;
+  margin: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+  transition: border 0.2s;
+}
+
+.footer .footer-links-wrapper .footer-link a:hover,
+.footer .footer-links-four .uppersection p a:hover,
+.footer .footer-links-four .lowersection > a:hover {
+  border-bottom: 2px solid #333333a4;
+}
+
+.footer .footer-links-four {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer .footer-links-four .uppersection > a {
+  display: block;
+  width: fit-content;
+  color: var(--primary);
+  font-family: GT;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16.2px;
+  margin-bottom: 1.8rem;
+  border-bottom: 2px solid var(--primary);
+}
+
+.footer .footer-links-four .uppersection > a:hover {
+  color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+.footer .footer-links-four .uppersection p {
+  color: #3333337c;
+  font-family: GT;
+  font-weight: lighter;
+  font-size: 13px;
+  line-height: 16.2px;
+}
+
+.footer .footer-links-four .uppersection p a {
+  color: #3333337c;
+  border-bottom: 2px solid #f0f0f0;
+  transition: border 0.2s;
+}
+
+.footer .footer-links-four .lowersection {
+  flex-direction: column;
+}
+
+.footer .footer-links-four .lowersection > a {
+  display: block;
+  width: fit-content;
+  color: #3333337c;
+  font-family: GT;
+  font-weight: lighter;
+  font-size: 13px;
+  line-height: 16.2px;
+  border-bottom: 2px solid #f0f0f0;
+  transition: border 0.2s;
+}
+
+.footer .footer-links-four .lowersection > span {
+  margin-top: 1rem;
+  font-size: 10px;
+  font-family: GT;
+}
+/*******XX******FOOTER SECTION *****XX*****/

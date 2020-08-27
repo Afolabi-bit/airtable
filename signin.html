@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in - Airtable</title>
+
+    <link rel="stylesheet" href="./css/signin.css" />
+  </head>
+  <body>
+    <main>
+      <section class="main-wrapper">
+        <div class="content">
+          <div class="logo-section">
+            <a href="./index.html"></a>
+            <object
+              data="./assets/common-assets/airtable-logo.svg"
+              type="image/svg+xml"
+            ></object>
+          </div>
+          <div class="form-text-wrapper">
+            <form class="sign-in-form">
+              <div class="form-text flex-row">
+                <span>Sign in</span>
+                <a class="border-link" href="#">Forgot password?</a>
+              </div>
+              <div class="input-field">
+                <input type="email" class="sign-in-field" placeholder="Email" />
+                <object
+                  data="./assets/signinPageAssets/email.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <div class="input-field">
+                <input
+                  type="password"
+                  class="sign-in-field"
+                  placeholder="Password"
+                />
+                <object
+                  data="./assets/signinPageAssets/password.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+              <button class="sign-in-btn">Sign in</button>
+            </form>
+            <div class="google-section">
+              <div class="google-btn-wrapper">
+                <button class="google-btn">
+                  <object
+                    data="./assets/signinPageAssets/google.svg"
+                    type="image/svg+xml"
+                  ></object
+                  >&nbsp;&nbsp; Sign in with Google
+                </button>
+              </div>
+              <div class="google-text flex-row">
+                <div class="left">
+                  <span>Don't have an account?</span> <br />
+                  <a href="#">Sign up for free</a>
+                </div>
+                <div class="right">
+                  <a class="border-link" href="#">Sign in with SSO</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

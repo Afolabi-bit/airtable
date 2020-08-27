@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: GT;
+  src: url(../font/Gt-medium/GT-Eesti-Display-Medium.ttf);
+}
+
+:root {
+  --primary: #2d7ff9;
+  --primary-hover: #0049b8;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: GT;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 0.774);
+}
+
+span,
+p,
+a {
+  color: #3333339f;
+}
+.montserrat {
+  font-family: GT;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.border-link {
+  display: block;
+  width: fit-content;
+  color: #3333337c;
+  font-family: GT;
+  font-weight: lighter;
+  font-size: 13px;
+  line-height: 16.2px;
+  border-bottom: 2px solid #f0f0f0;
+  transition: border 0.2s;
+}
+
+.border-link:hover {
+  border-bottom: 2px solid #333333a4;
+}
+
+/* MAIN ******/
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 350px;
+  overflow: hidden;
+}
+
+main .main-wrapper .content {
+  width: 85%;
+  margin: 0 auto;
+}
+
+main .main-wrapper .logo-section {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 0 0 2rem 3rem;
+}
+
+main .main-wrapper .logo-section a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  z-index: 100;
+}
+
+main .main-wrapper .form-text-wrapper {
+  margin: 0 auto;
+}
+
+main .main-wrapper .form-text-wrapper .form-text {
+  justify-content: space-between;
+}
+
+main .main-wrapper .form-text-wrapper .form-text span {
+  font-size: 13px;
+  color: #333;
+}
+
+main .main-wrapper .form-text-wrapper .form-text a {
+  font-weight: lighter;
+}
+
+main .main-wrapper .form-text-wrapper .sign-in-form {
+  background: #f2f2f2;
+  border-radius: 8px;
+  padding: 3rem;
+  margin: 1rem 0 2rem;
+}
+
+main .main-wrapper .form-text-wrapper .sign-in-form .input-field {
+  position: relative;
+}
+
+main
+  .main-wrapper
+  .form-text-wrapper
+  .sign-in-form
+  .input-field
+  .sign-in-field {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1.5rem 2rem 1.3rem 4rem;
+  background: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+main
+  .main-wrapper
+  .form-text-wrapper
+  .sign-in-form
+  .input-field
+  .sign-in-field:focus {
+  border: 2px solid #d4d4d4;
+}
+
+main .main-wrapper .form-text-wrapper .sign-in-form .input-field object {
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  transform: translateY(-50%);
+}
+
+main .main-wrapper .form-text-wrapper .sign-in-form .sign-in-btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background-color: #c5c5c5;
+  border-radius: 5px;
+  margin: 1rem 0;
+  color: #3333339d;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+main .main-wrapper .form-text-wrapper .google-section {
+  width: 90%;
+  padding: 1rem 0 2rem;
+  margin: 1rem auto;
+}
+
+main .main-wrapper .form-text-wrapper .google-section .google-btn-wrapper {
+  width: 100%;
+}
+
+main
+  .main-wrapper
+  .form-text-wrapper
+  .google-section
+  .google-btn-wrapper
+  .google-btn {
+  cursor: pointer;
+  color: #33333394;
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+  border: 2px solid #e4e4e4;
+  outline: none;
+  border-radius: 5px;
+  background: transparent;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+main
+  .main-wrapper
+  .form-text-wrapper
+  .google-section
+  .google-btn-wrapper
+  .google-btn:hover {
+  color: #33333359;
+}
+
+main
+  .main-wrapper
+  .form-text-wrapper
+  .google-section
+  .google-btn-wrapper
+  .google-btn:focus {
+  box-shadow: 1px 1px 4px rgba(51, 51, 51, 0.575) inset,
+    -1px -1px 4px rgba(51, 51, 51, 0.575) inset;
+}
+
+main
+  .main-wrapper
+  .form-text-wrapper
+  .google-section
+  .google-btn-wrapper
+  .google-btn
+  > object {
+  transform: translateY(3px);
+}
+
+main .main-wrapper .form-text-wrapper .google-section .google-text {
+  justify-content: space-between;
+}
+
+main .main-wrapper .form-text-wrapper .google-section .google-text .left span {
+  font-size: 10px;
+}
+
+main .main-wrapper .form-text-wrapper .google-section .google-text .left a {
+  color: var(--primary);
+  font-size: 11px;
+  margin: 1.5rem 0;
+  border-bottom: 2px solid var(--primary);
+}
+
+main
+  .main-wrapper
+  .form-text-wrapper
+  .google-section
+  .google-text
+  .left
+  a:hover {
+  color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+/*XX MAIN ****XX**/
